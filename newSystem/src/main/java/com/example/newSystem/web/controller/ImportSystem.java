@@ -52,8 +52,9 @@ public class ImportSystem {
 
     }
 
-    @Scheduled(fixedDelay = 50000)
+    @Scheduled(fixedDelay = 7200000)
     public void updateNotes() {
+        LOG.info("import start");
         List<ClientDto> clientDtoList = new ArrayList<>();
         try {
             clientDtoList = getClients();

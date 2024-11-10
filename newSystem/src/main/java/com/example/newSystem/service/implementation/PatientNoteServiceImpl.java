@@ -74,7 +74,7 @@ public class PatientNoteServiceImpl implements NoteService {
         }
         if (patientProfileList.size() == 0) {
             LOG.info("no matches of clients and patients were found with id {}", clientNoteDto.getClientGuid());
-        } 
+        }
             return null;
     }
 
